@@ -23,7 +23,7 @@ function marcarTodas() {
   for (let i = 0; i < tareas.length; i++) {
     tareas[i].classList.add("hecha");
   }
-  customAlert("Todas las tareas fueron marcadas como hechas");
+  Alert("Todas las tareas fueron marcadas como hechas");
 }
 
 window.agregarTarea = agregarTarea;
