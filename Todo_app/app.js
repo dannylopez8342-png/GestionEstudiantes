@@ -18,15 +18,18 @@ function contarTareas() {
   return lista.children.length;
 }
 
-function buscarTarea(texto) {
+function marcarTodas() {
   const tareas = document.querySelectorAll("#listaTareas li");
   for (let i = 0; i < tareas.length; i++) {
-    if (tareas[i].textContent.toLowerCase().includes(texto.toLowerCase())) {
-      return true;
-    }
+    tareas[i].classList.add("hecha");
   }
-  return false;
+  customAlert("Todas las tareas fueron marcadas como hechas");
 }
 
+window.agregarTarea = agregarTarea;
+window.eliminar = eliminar;
+window.contarTareas = contarTareas;
+window.marcarTodas = marcarTodas;
 
 
+  
