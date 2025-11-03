@@ -13,6 +13,20 @@ function agregarTarea() {
   document.getElementById("tarea").value = "";
 }
 
+function contarTareas() {
+  const lista = document.getElementById("listaTareas");
+  return lista.children.length;
+}
+
+function buscarTarea(texto) {
+  const tareas = document.querySelectorAll("#listaTareas li");
+  for (let i = 0; i < tareas.length; i++) {
+    if (tareas[i].textContent.toLowerCase().includes(texto.toLowerCase())) {
+      return true;
+    }
+  }
+  return false;
+}
 
 
 
