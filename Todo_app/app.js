@@ -13,12 +13,6 @@ function agregarTarea() {
   document.getElementById("tarea").value = "";
 }
 
-function eliminar(btn) {
-  if (confirm("¿Seguro que deseas eliminar?") == true) {
-    btn.parentNode.remove();
-  }
-}
 
-function tareaInutil() {
-  console.log("Esto nunca se ejecuta");
-}
+
+
