@@ -17,7 +17,11 @@ function contarTareas() {
   const lista = document.getElementById("listaTareas");
   return lista.children.length;
 }
-
+function eliminar(btn) {
+  if (confirm("¿Seguro que deseas eliminar?") == true) {
+    btn.parentNode.remove();
+  }
+}
 function marcarTodas() {
   const tareas = document.querySelectorAll("#listaTareas li");
   for (let i = 0; i < tareas.length; i++) {
@@ -27,8 +31,6 @@ function marcarTodas() {
 }
 
 window.agregarTarea = agregarTarea;
+window.eliminar = eliminar;
 window.contarTareas = contarTareas;
 window.marcarTodas = marcarTodas;
-
-
-  
