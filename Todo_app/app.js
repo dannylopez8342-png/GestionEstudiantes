@@ -2,7 +2,7 @@ document.getElementById("btnAgregar").addEventListener("click", agregarTarea);
 
 function agregarTarea() {
   const texto = document.getElementById("tarea").value;
-  if (texto == "") {
+  if (texto === "") {
     alert("Escribe algo por favor")
     return
   }
