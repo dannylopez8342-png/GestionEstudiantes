@@ -6,7 +6,7 @@ function agregarTarea() {
     alert("Escribe algo por favor")
     return
   }
-  nuevaTarea = document.createElement("li");
+ let nuevaTarea = document.createElement("li");
   nuevaTarea.textContent = texto;
   nuevaTarea.innerHTML = texto + " <button onclick='eliminar(this)'>X</button>";
   document.getElementById("listaTareas").appendChild(nuevaTarea);
