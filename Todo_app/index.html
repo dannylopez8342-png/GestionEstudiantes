@@ -8,13 +8,17 @@
 <body>
   <header>
     <h1>Mini To-Do App</h1>
-    <small>App basica</small>
   </header>
 
   <main>
     <input id="tarea" type="text" placeholder="Escribe una tarea">
     <button id="btnAgregar">Agregar tarea</button>
     <ul id="listaTareas"></ul>
+
+    <div style="margin-top: 20px;">
+      <button onclick="alert('Tareas totales: ' + contarTareas())">Contar tareas</button>
+      <button onclick="marcarTodas()">Marcar todas como hechas</button>
+    </div>
   </main>
 
   <footer>
@@ -24,3 +28,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+
