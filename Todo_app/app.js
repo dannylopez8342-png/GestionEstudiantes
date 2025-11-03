@@ -27,7 +27,6 @@ function marcarTodas() {
 }
 
 window.agregarTarea = agregarTarea;
-window.eliminar = eliminar;
 window.contarTareas = contarTareas;
 window.marcarTodas = marcarTodas;
 
